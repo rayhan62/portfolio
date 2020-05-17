@@ -185,3 +185,15 @@ $(document).ready(function ($) {
         loopCount: Infinity
     });
 });
+$(document).ready(function ($) {
+    'use strict';
+// Initialize library
+lozad('.lozad', {
+    load: function(el) {
+        el.src = el.dataset.src;
+        el.onload = function() {
+            el.classList.add('fade')
+        }
+    }
+}).observe()
+});

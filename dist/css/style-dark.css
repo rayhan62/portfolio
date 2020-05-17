@@ -61,7 +61,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+[data-src] {
+	min-width:330px;
+	min-height: 220px;
+}
 a {
 	color: #fff;
 	-webkit-transition: all .3s ease-in-out;
@@ -941,11 +944,11 @@ blockquote:before,
 }
 .banner_content h4 {
 	margin-bottom: 20px;
-	color: #eee;
+	color: #d1d1d1;
 }
 .banner_content p {
 	margin-bottom: 25px;
-	color: #a5a5a5;
+	color: #888888;
 	line-height: 1.8;
 
 }
@@ -965,7 +968,7 @@ blockquote:before,
 }
 
 .btn-default:hover {
-    background-color: #3C38E4;
+    background-color: #620CE3;
     color: #fff;
 }
 .btn:focus, .btn:hover, .btn.active {
@@ -991,6 +994,7 @@ blockquote:before,
 	position: relative;
 	background: #262940;
 	height: 90vh;
+	overflow: hidden;
 	border-bottom-right-radius: 200px;
 }
 .banner_section {
@@ -1018,11 +1022,8 @@ blockquote:before,
 }
 }
 @media only screen and (max-width: 468px){
-	.banner_content h2, .page-content .banner_content h2 {
-		font-size: 24px;
-	}
 	.h4, h4 {
-		font-size: 16px;
+		font-size: 20px;
 	}
 }
 @media only screen and (max-width: 768px){
@@ -1033,11 +1034,12 @@ blockquote:before,
 }
 .banner-wrapper{
 	height: 100vh;
-	overflow: scroll;
-	overflow-x: hidden;
-}
-.banner-wrapper{
+	overflow: visible;
 	border-bottom-right-radius: 0px;
+}
+.banner-image{
+	 overflow: scroll;
+	 overflow-x: hidden;
 }
 }
 /* Language */
